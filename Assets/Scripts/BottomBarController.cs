@@ -63,6 +63,7 @@ public class BottomBarController : MonoBehaviour
     {
         StartCoroutine(TypeText(currentScene.senteces[++sentenceIndex].text));
         personNameText.text = currentScene.senteces[sentenceIndex].speaker.speakerName;
+        ActSpeakers();
 
         // speaker color not working
         //personNameText.color = currentScene.senteces[sentenceIndex].speaker.textColor;
@@ -94,6 +95,20 @@ public class BottomBarController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    private void ActSpeakers()
+    {
+        List<StoryScene.Sentence.Action> actions = currentScene.senteces[sentenceIndex].actions;
+        for (int i = 0; i < actions.Count; i++)
+        {
+            ActSpeaker(actions[i]);
+        }
+    }
+
+    private void ActSpeaker(StoryScene.Sentence.Action action)
+    {
+        
     }
 
 }

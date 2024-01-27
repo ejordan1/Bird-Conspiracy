@@ -15,9 +15,22 @@ MonoBehaviour:
   senteces:
   - text: first sentence
     speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
+    Actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 400, y: 0}
+      moveSpeed: 0
   - text: Hey Arthur
     speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
+    Actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   - text: Hey asdfadsf
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    Actions: []
   background: {fileID: 21300000, guid: 486bfb743ac9e40638c9cf11153b351d, type: 3}
   nextScene: {fileID: 11400000, guid: a5fd01d47147d4c26a346cdb09943750, type: 2}
