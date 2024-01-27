@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 
     public StoryScene currentScene;
     public BottomBarController bottomBar;
-    public BackgroundController backgroundController;
+    public SpriteSwitcher backgroundController;
     private State state = State.IDLE;
 
     private enum State {
