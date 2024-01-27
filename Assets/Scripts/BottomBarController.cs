@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -15,13 +16,17 @@ public class BottomBarController : MonoBehaviour
     private Animator animator;
     private bool isHidden = false;
 
+    public Dictionary<Speaker, SpriteController> sprites;
+    public GameObject spritesPrefab;
+
     private enum State
     {
         PLAYING, COMPLETED
     }
 
-    private void Start()
+    private void Awake()
     {
+        sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
     }
 
@@ -106,9 +111,57 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
+    // checks if that speaker already exists in dictionary, creates it
     private void ActSpeaker(StoryScene.Sentence.Action action)
     {
-        
+        SpriteController controller = null;
+        switch (action.actionType)
+        {
+            case StoryScene.Sentence.Action.Type.APPEAR:
+                if (!sprites.ContainsKey(action.speaker))
+                {
+                    controller = Instantiate(action.speaker.prefab.gameObject, spritesPrefab.transform)
+                    .GetComponent<SpriteController>();
+                    sprites.Add(action.speaker, controller);
+                }
+                else
+                {
+                    controller = sprites[action.speaker];
+                }
+                controller.Setup(action.speaker.sprites[action.spriteIndex]);
+                controller.Show(action.coords);
+                return;
+
+            case StoryScene.Sentence.Action.Type.MOVE:
+                if (sprites.ContainsKey(action.speaker))
+                {
+                    controller = sprites[action.speaker];
+                    controller.Move(action.coords, action.moveSpeed);
+                }
+
+                break;
+
+            case StoryScene.Sentence.Action.Type.DISAPPEAR:
+                if (sprites.ContainsKey(action.speaker))
+                {
+                    controller = sprites[action.speaker];
+                    controller.Hide();
+                }
+
+                break;
+
+
+            case StoryScene.Sentence.Action.Type.NONE:
+            if (sprites.ContainsKey(action.speaker))
+                {
+                    controller = sprites[action.speaker];
+                }
+                break;
+        }
+        if (controller != null)
+        {
+            controller.SwitchSprite(action.speaker.sprites[action.spriteIndex]);
+        }
     }
 
 }
