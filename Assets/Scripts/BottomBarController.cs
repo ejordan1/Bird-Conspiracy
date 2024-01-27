@@ -138,7 +138,6 @@ public class BottomBarController : MonoBehaviour
                     controller = sprites[action.speaker];
                     controller.Move(action.coords, action.moveSpeed);
                 }
-
                 break;
 
             case StoryScene.Sentence.Action.Type.DISAPPEAR:
@@ -147,9 +146,7 @@ public class BottomBarController : MonoBehaviour
                     controller = sprites[action.speaker];
                     controller.Hide();
                 }
-
                 break;
-
 
             case StoryScene.Sentence.Action.Type.NONE:
             if (sprites.ContainsKey(action.speaker))

@@ -15,12 +15,7 @@ MonoBehaviour:
   senteces:
   - text: scene two sentence 1 helloe
     speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
-      spriteIndex: 0
-      actionType: 0
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
+    actions: []
   - text: scene two sentence 2 helloe george
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
