@@ -8,6 +8,11 @@ public class GameController : MonoBehaviour
     public StoryScene currentScene;
     public BottomBarController bottomBar;
     public BackgroundController backgroundController;
+    private State state = State.IDLE;
+
+    private enum State {
+        IDLE, ANIMATE,
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +25,36 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            if(bottomBar.isCompleted())
+            if(state == State.IDLE && bottomBar.isCompleted())
             {
                 if(bottomBar.IsLastSentence())
                 {
-                    currentScene = currentScene.nextScene;
-                    bottomBar.PlayScene(currentScene);
-                    backgroundController.SwitchImage (currentScene.background);
+                    PlayScene(currentScene.nextScene);
                 } else {
                 bottomBar.PlayNextSentence();
                 }
             }
         }
     }
+
+    private void PlayScene(StoryScene scene)
+    {
+        StartCoroutine(SwitchScene(scene));
+    }
+
+    private IEnumerator SwitchScene(StoryScene scene)
+    {
+        state = State.ANIMATE;
+        currentScene = scene;
+        bottomBar.Hide();
+        yield return new WaitForSeconds(1f);
+        backgroundController.SwitchImage(scene.background);
+        yield return new WaitForSeconds(1f);
+        bottomBar.ClearText();
+        bottomBar.Show();
+        yield return new WaitForSeconds(1f);
+        bottomBar.PlayScene(scene);
+        state = State.IDLE;
+    }
 }
+

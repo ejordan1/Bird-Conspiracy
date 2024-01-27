@@ -12,10 +12,43 @@ public class BottomBarController : MonoBehaviour
     public StoryScene currentScene;
     private int sentenceIndex = -1; // because it adds at the beginning to 0
     private State state = State.COMPLETED;
+    private Animator animator;
+    private bool isHidden = false;
 
     private enum State
     {
         PLAYING, COMPLETED
+    }
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    public void Hide()
+    {
+        if (!isHidden)
+        {
+            animator.SetTrigger("Hide");
+            isHidden = true;
+        }
+    }
+
+    public void Show()
+    {
+        if (isHidden)
+        {
+            animator.SetTrigger("Show");
+            isHidden = false;
+        }
+    }
+
+    public void ClearText()
+    {
+        barText.text = "";
+
+        // I added this
+        personNameText.text = "";
     }
 
     public void PlayScene(StoryScene scene)
@@ -51,7 +84,8 @@ public class BottomBarController : MonoBehaviour
         barText.text = "";
         state = State.PLAYING;
         int wordIndex = 0;
-        while(state != State.COMPLETED){
+        while (state != State.COMPLETED)
+        {
             barText.text += text[wordIndex];
             yield return new WaitForSeconds(0.05f);
             if (++wordIndex == text.Length)
