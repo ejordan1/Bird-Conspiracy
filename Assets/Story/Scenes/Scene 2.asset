@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a735beee73eec472ca05f1d022bbcb0e, type: 3}
-  m_Name: Scene 1
+  m_Name: Scene 2
   m_EditorClassIdentifier: 
   senteces:
-  - text: first sentence
+  - text: scene two sentence 1 helloe
     speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
-  - text: Hey Arthur
-    speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
-  - text: Hey asdfadsf
+  - text: scene two sentence 2 helloe george
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
-  background: {fileID: 21300000, guid: 486bfb743ac9e40638c9cf11153b351d, type: 3}
-  nextScene: {fileID: 11400000, guid: a5fd01d47147d4c26a346cdb09943750, type: 2}
+  - text: second scene third sentence arthur
+    speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
+  background: {fileID: 21300000, guid: b69fe371e496241078f6bf15576888c7, type: 3}
+  nextScene: {fileID: 11400000, guid: f1bc8fff747ff41b283c093e3d39293e, type: 2}
