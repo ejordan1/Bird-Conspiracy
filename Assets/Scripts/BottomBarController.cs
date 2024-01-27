@@ -17,10 +17,27 @@ public class BottomBarController : MonoBehaviour
     {
         PLAYING, COMPLETED
     }
+
+    public void PlayScene(StoryScene scene)
+    {
+        currentScene = scene;
+        sentenceIndex = -1;
+        PlayNextSentence();
+    }
+
     // Start is called before the first frame update
-    void Start()
+    public void PlayNextSentence()
     {
         StartCoroutine(TypeText(currentScene.senteces[++sentenceIndex].text));
+        personNameText.text = currentScene.senteces[sentenceIndex].speaker.speakerName;
+
+        // speaker color not working
+        //personNameText.color = currentScene.senteces[sentenceIndex].speaker.textColor;
+    }
+
+    public bool isCompleted()
+    {
+        return state == State.COMPLETED;
     }
 
 
