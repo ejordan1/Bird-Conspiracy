@@ -12,9 +12,13 @@ public class GameManager : MonoBehaviour
     private List<PoopTarget> poopTargets;
 
     public string nextSceneString;
+
+    public Camera camera;
     // Start is called before the first frame update
     void Start()
     {
+
+        camera = Camera.main;
         poopTargets = new List<PoopTarget>();
         GameObject[] targetObjects = GameObject.FindGameObjectsWithTag("Target");
         foreach (GameObject g in targetObjects)
@@ -24,35 +28,49 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void clickedOnBackground()
+    {
+        Debug.Log("player lost");
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePos = Input.mousePosition;
-            bool targetHit = false;
+    //     if (Input.GetMouseButtonDown(0))
+    //     {
 
-            foreach (PoopTarget poopTarget in poopTargets)
-            {
-                if ((Mathf.Abs(mousePos.x - poopTarget.gameObject.transform.position.x) < poopTarget.xSize) && Math.Abs(mousePos.y - poopTarget.gameObject.transform.position.y) < poopTarget.ySize)
-                {
-                    poopTarget.GotPooped();
-                    targetHit = true;
-                }
-            }
-            if (!targetHit)
-            {
-                // game over
-            }
+    //        Vector3 mousePosition = Input.mousePosition;
+    //        Ray ray = camera.ScreenPointToRay(mousePosition);
+    //        if (Physics.Raycast(ray, out RaycastHit hit))
+    //        {
+    //         Debug.Log(hit.)
+    //            // Use the hit variable to determine what was clicked on.
+    //        }
+    //    }
+            // Vector3 mousePos = Input.mousePosition;
+            // bool targetHit = false;
 
-        }
+            // foreach (PoopTarget poopTarget in poopTargets)
+            // {
+            //     if ((Mathf.Abs(mousePos.x - poopTarget.gameObject.transform.position.x) < poopTarget.xSize) && Math.Abs(mousePos.y - poopTarget.gameObject.transform.position.y) < poopTarget.ySize)
+            //     {
+            //         poopTarget.GotPooped();
+            //         targetHit = true;
+            //     }
+            // }
+            // if (!targetHit)
+            // {
+            //     // game over
+            // }
 
-        if (targetsAllHit())
-        {
-            StartCoroutine(MoveCoroutine());
-            //start ending sequence
-            // Debug.Log("All targets hit");
-        }
+        //}
+
+        // if (targetsAllHit())
+        // {
+        //     StartCoroutine(MoveCoroutine());
+        //     //start ending sequence
+        //     // Debug.Log("All targets hit");
+        // }
     }
 
     private bool targetsAllHit()
