@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using FMODUnity;
+using UnityEngine.UI;
 
 public class BottomBarController : MonoBehaviour
 {
     [SerializeField] private EventReference sampleSound1;
+    [SerializeField] private EventReference sampleSound2;
 
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
@@ -23,6 +25,8 @@ public class BottomBarController : MonoBehaviour
     public Dictionary<Speaker, SpriteController> sprites;
     public GameObject spritesPrefab;
 
+    public Image dronesObject;
+
     private enum State
     {
         PLAYING, COMPLETED
@@ -37,6 +41,7 @@ public class BottomBarController : MonoBehaviour
     private void Start()
     {
         spriteSwitcher = backGround.GetComponent<SpriteSwitcher>();
+
     }
 
     public void Hide()
@@ -112,6 +117,23 @@ public class BottomBarController : MonoBehaviour
         }
     }
 
+        private IEnumerator DroneSound()
+    {
+        int counter = 0;
+        while (counter < 30)
+        {
+            counter++;
+            yield return new WaitForSecondsRealtime(0.04f);
+            AudioManager.instance.PlayOneShot(sampleSound2, this.transform.position);
+        }
+    }
+
+        private IEnumerator HideDrones()
+    {
+        yield return new WaitForSeconds(1f);
+        dronesObject.GetComponent<Image>().color = new Color32(0,0,0,0);
+    }
+
     private void ActSpeakers()
     {
         List<StoryScene.Sentence.Action> actions = currentScene.senteces[sentenceIndex].actions;
@@ -159,14 +181,21 @@ public class BottomBarController : MonoBehaviour
                 break;
 
             case StoryScene.Sentence.Action.Type.NONE:
-            if (sprites.ContainsKey(action.speaker))
+                if (sprites.ContainsKey(action.speaker))
                 {
                     controller = sprites[action.speaker];
                 }
                 break;
             case StoryScene.Sentence.Action.Type.ZOOM:
-            Debug.Log("zooming");
-            spriteSwitcher.ZoomOnBoss();
+                Debug.Log("zooming");
+                spriteSwitcher.ZoomOnBoss();
+                break;
+            case StoryScene.Sentence.Action.Type.DRONES:
+                Debug.Log("drones");
+                dronesObject.GetComponent<Image>().color = new Color32(255,255,225,255);
+                        StartCoroutine(HideDrones());
+                        StartCoroutine(DroneSound());
+                        
                 break;
         }
         if (controller != null)

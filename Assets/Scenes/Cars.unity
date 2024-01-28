@@ -666,11 +666,11 @@ MonoBehaviour:
     Path: event:/Sound/sfx_poopsplat
   <music>k__BackingField:
     Guid:
-      Data1: -147300212
-      Data2: 1244753323
-      Data3: 109018808
-      Data4: 1177442920
-    Path: event:/Music/music_morningmood
+      Data1: 1758323788
+      Data2: 1223778412
+      Data3: 410562451
+      Data4: 2079227814
+    Path: event:/Music/music_spymusic
 --- !u!1001 &914287389
 PrefabInstance:
   m_ObjectHideFlags: 0

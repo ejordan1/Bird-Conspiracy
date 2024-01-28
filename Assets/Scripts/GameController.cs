@@ -19,6 +19,8 @@ public class GameController : MonoBehaviour
     {
         bottomBar.PlayScene(currentScene);
         backgroundController.SetImage(currentScene.background);
+
+        
     }
 
     // Update is called once per frame
