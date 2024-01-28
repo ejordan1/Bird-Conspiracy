@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerLost.unity
     guid: 233160a60724640298f965e15340922d
+  - enabled: 1
+    path: Assets/Scenes/Flyby.unity
+    guid: a484346e3643b49829350931c310a294
+  - enabled: 1
+    path: Assets/Scenes/Salute.unity
+    guid: 4684c570eb3334f73b50e290107262e2
+  - enabled: 1
+    path: Assets/Scenes/BirdEyeClose.unity
+    guid: f4e13776ae8e4499793f858eb7dacbf5
   m_configObjects: {}

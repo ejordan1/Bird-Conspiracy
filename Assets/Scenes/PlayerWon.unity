@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 516024909}
   - component: {fileID: 516024908}
   - component: {fileID: 516024907}
+  - component: {fileID: 516024912}
+  - component: {fileID: 516024911}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -225,6 +227,44 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &516024911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516024906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c133ff1abc5451f9ea321dbd3a2047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <poopsplat>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <music>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!114 &516024912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516024906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b026dfc56ba94b6e9737797dee7916f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264033322
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +477,7 @@ GameObject:
   - component: {fileID: 1602139627}
   - component: {fileID: 1602139626}
   - component: {fileID: 1602139625}
+  - component: {fileID: 1602139628}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -518,6 +559,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602139628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602139624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &1630319453
 GameObject:
   m_ObjectHideFlags: 0

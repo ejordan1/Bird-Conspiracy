@@ -23,9 +23,5 @@ public class FMODEvents : MonoBehaviour
             instance = this;
         }
 
-        public EventInstance CreateInstance(EventReference eventReference)
-        {
-            EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
-            return eventInstance;
-        }
+
 }
