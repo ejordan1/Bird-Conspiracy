@@ -240,6 +240,8 @@ GameObject:
   - component: {fileID: 953535086}
   - component: {fileID: 953535085}
   - component: {fileID: 953535084}
+  - component: {fileID: 953535088}
+  - component: {fileID: 953535087}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -321,6 +323,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953535087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953535083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058598866d9604072805cf8355466915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyMusic:
+    Guid:
+      Data1: 559161275
+      Data2: 1082033711
+      Data3: 2073507507
+      Data4: 2580098
+    Path: event:/Sound/sfx_pigeonflap
+  fallSound:
+    Guid:
+      Data1: 518443011
+      Data2: 1262406993
+      Data3: -437241467
+      Data4: 1339291981
+    Path: event:/Sound/sfx_poopsplat
+  splatSound:
+    Guid:
+      Data1: 1002602667
+      Data2: 1217025740
+      Data3: -783365960
+      Data4: -710096623
+    Path: event:/Sound/sfx_pigeonpoopfall
+--- !u!114 &953535088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953535083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b026dfc56ba94b6e9737797dee7916f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
