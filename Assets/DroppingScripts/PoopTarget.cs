@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class PoopTarget : MonoBehaviour
 {
 
@@ -11,6 +12,7 @@ public class PoopTarget : MonoBehaviour
 
     public Image poop;
     public Image check;
+    //[SerializeField] private EventReference sampleSound1;
     
     void Start()
     {
@@ -27,6 +29,7 @@ public class PoopTarget : MonoBehaviour
                 hasBeenHit = true;
                 poop.GetComponent<Image>().color = new Color32(255,255,225,255);
                 check.GetComponent<Image>().color = new Color32(255,255,225,255);
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.poopsplat, this.transform.position);
     }
 
 }

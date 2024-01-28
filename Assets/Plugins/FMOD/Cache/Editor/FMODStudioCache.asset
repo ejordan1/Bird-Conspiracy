@@ -1,0 +1,663 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8879335961690642120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Documents/Pigeon FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638420383609353227
+  FileSizes:
+  - Name: Desktop
+    Value: 1796
+  Exists: 1
+--- !u!114 &-8723869955784836396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Pidgeon voices/speak_robotic
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Pidgeon voices/speak_robotic
+  Guid:
+    Data1: 1749720495
+    Data2: 1212713023
+    Data3: 1898875806
+    Data4: -40933717
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 80
+--- !u!114 &-8697132771658608176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Documents/Pigeon FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638420383609327817
+  FileSizes:
+  - Name: Desktop
+    Value: 14382688
+  Exists: 1
+--- !u!114 &-7357410850536929315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/sfx_Doorcreak
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/sfx_Doorcreak
+  Guid:
+    Data1: 1145234572
+    Data2: 1310170668
+    Data3: -950210642
+    Data4: 951716401
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3434
+--- !u!114 &-6529154281247009086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_wompwomp
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_wompwomp
+  Guid:
+    Data1: 1148645637
+    Data2: 1106440897
+    Data3: -1778744166
+    Data4: -1055574786
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4277
+--- !u!114 &-5537390920010260973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/sfx_birdsarentreal
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/sfx_birdsarentreal
+  Guid:
+    Data1: -936126649
+    Data2: 1244728115
+    Data3: 208846268
+    Data4: -643506588
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5762
+--- !u!114 &-4440256103435182035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_morningmood
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_morningmood
+  Guid:
+    Data1: -147300212
+    Data2: 1244753323
+    Data3: 109018808
+    Data4: 1177442920
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7970
+--- !u!114 &-4362947425614875853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience_morning/morningA
+  m_EditorClassIdentifier: 
+  Name: morningA
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1062473416
+    data2: 34621751
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3718718235301409884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/sfx_poopsplat
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/sfx_poopsplat
+  Guid:
+    Data1: 518443011
+    Data2: 1262406993
+    Data3: -437241467
+    Data4: 1339291981
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3693735477776732315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_spymusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_spymusic
+  Guid:
+    Data1: 1758323788
+    Data2: 1223778412
+    Data3: 410562451
+    Data4: 2079227814
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5413483836864870438}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 59799
+--- !u!114 &-3046896518428576957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/sfx_pigeonpoopfall
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/sfx_pigeonpoopfall
+  Guid:
+    Data1: 1002602667
+    Data2: 1217025740
+    Data3: -783365960
+    Data4: -710096623
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &-613735122083994720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/music_briefingdrone
+  m_EditorClassIdentifier: 
+  Path: event:/Music/music_briefingdrone
+  Guid:
+    Data1: -573724630
+    Data2: 1330256245
+    Data3: -756879430
+    Data4: 670870184
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -436591572205518514}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-436591572205518514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_briefingdrone/Drone Intensity
+  m_EditorClassIdentifier: 
+  Name: Drone Intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1972881312
+    data2: 2833620615
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -8879335961690642120}
+  - {fileID: -8697132771658608176}
+  EditorEvents:
+  - {fileID: -3718718235301409884}
+  - {fileID: -6529154281247009086}
+  - {fileID: 4049468939570698321}
+  - {fileID: -613735122083994720}
+  - {fileID: 2758257265939546147}
+  - {fileID: -5537390920010260973}
+  - {fileID: -3693735477776732315}
+  - {fileID: 7537588020905957322}
+  - {fileID: -4440256103435182035}
+  - {fileID: -7357410850536929315}
+  - {fileID: -3046896518428576957}
+  - {fileID: -8723869955784836396}
+  - {fileID: 3484764704876352746}
+  - {fileID: 2904620141530618313}
+  - {fileID: 1788186237278983990}
+  - {fileID: 8525861505922780644}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -8697132771658608176}
+  StringsBanks:
+  - {fileID: -8879335961690642120}
+  cacheTime: 638420383609353227
+  cacheVersion: 131616
+--- !u!114 &1788186237278983990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Pidgeon voices/speak_boss
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Pidgeon voices/speak_boss
+  Guid:
+    Data1: 151939568
+    Data2: 1245709436
+    Data3: 259532213
+    Data4: -1058110408
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18
+--- !u!114 &2758257265939546147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Pidgeon voices/speak_pigeon
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Pidgeon voices/speak_pigeon
+  Guid:
+    Data1: -1909059010
+    Data2: 1190605146
+    Data3: -2116367454
+    Data4: 673168211
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18
+--- !u!114 &2904620141530618313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Ambience/ambience_parkinglot
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Ambience/ambience_parkinglot
+  Guid:
+    Data1: -486149919
+    Data2: 1159556794
+    Data3: 778531003
+    Data4: -798294220
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8124202170160521919}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3484764704876352746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/sfx_pigeonflap
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/sfx_pigeonflap
+  Guid:
+    Data1: 559161275
+    Data2: 1082033711
+    Data3: 2073507507
+    Data4: 2580098
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &4049468939570698321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Ambience/ambience_morning
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Ambience/ambience_morning
+  Guid:
+    Data1: 762325772
+    Data2: 1296446416
+    Data3: 1355269051
+    Data4: 378733116
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4362947425614875853}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4296465455396883121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience_park/ParkA
+  m_EditorClassIdentifier: 
+  Name: ParkA
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 539583687
+    data2: 117302884
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5413483836864870438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/music_spymusic/Mission End
+  m_EditorClassIdentifier: 
+  Name: Mission End
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3660948333
+    data2: 3649512756
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7537588020905957322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Ambience/ambience_office
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Ambience/ambience_office
+  Guid:
+    Data1: -687395711
+    Data2: 1187203693
+    Data3: -1398288227
+    Data4: -736428440
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7747311054650978054}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7747311054650978054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience_office/OfficeA
+  m_EditorClassIdentifier: 
+  Name: OfficeA
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1381460015
+    data2: 483075131
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8124202170160521919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambience_parkinglot/parkinglotA
+  m_EditorClassIdentifier: 
+  Name: parkinglotA
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3530084867
+    data2: 553362011
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8525861505922780644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound/Ambience/ambience_park
+  m_EditorClassIdentifier: 
+  Path: event:/Sound/Ambience/ambience_park
+  Guid:
+    Data1: 1000055286
+    Data2: 1104453028
+    Data3: -755375972
+    Data4: -633771756
+  Banks:
+  - {fileID: -8697132771658608176}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4296465455396883121}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

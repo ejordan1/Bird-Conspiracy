@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using FMODUnity;
 
 public class BottomBarController : MonoBehaviour
 {
+    [SerializeField] private EventReference sampleSound1;
 
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
@@ -101,6 +103,7 @@ public class BottomBarController : MonoBehaviour
         {
             barText.text += text[wordIndex];
             yield return new WaitForSeconds(0.05f);
+            AudioManager.instance.PlayOneShot(sampleSound1, this.transform.position);
             if (++wordIndex == text.Length)
             {
                 state = State.COMPLETED;

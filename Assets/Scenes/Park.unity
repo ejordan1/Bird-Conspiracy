@@ -427,7 +427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 890991514}
   - component: {fileID: 890991513}
-  - component: {fileID: 890991512}
+  - component: {fileID: 890991515}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -435,14 +435,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &890991512
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890991511}
-  m_Enabled: 1
 --- !u!20 &890991513
 Camera:
   m_ObjectHideFlags: 0
@@ -509,6 +501,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &890991515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890991511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 890991511}
 --- !u!1 &898777298
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +527,7 @@ GameObject:
   - component: {fileID: 898777300}
   - component: {fileID: 898777299}
   - component: {fileID: 898777303}
+  - component: {fileID: 898777304}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -628,6 +634,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneString: Boss2
+--- !u!114 &898777304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898777298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b026dfc56ba94b6e9737797dee7916f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &914287389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -647,6 +665,26 @@ PrefabInstance:
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 7.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Path
+      value: event:/Sound/sfx_poopsplat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data1
+      value: 518443011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data2
+      value: 1262406993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data3
+      value: -437241467
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data4
+      value: 1339291981
       objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
@@ -921,6 +959,26 @@ PrefabInstance:
       propertyPath: ySize
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Path
+      value: event:/Sound/sfx_poopsplat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data1
+      value: 518443011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data2
+      value: 1262406993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data3
+      value: -437241467
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data4
+      value: 1339291981
+      objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
       value: 0.5529412
@@ -1185,6 +1243,26 @@ PrefabInstance:
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Path
+      value: event:/Sound/sfx_poopsplat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data1
+      value: 518443011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data2
+      value: 1262406993
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data3
+      value: -437241467
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: sampleSound1.Guid.Data4
+      value: 1339291981
       objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a

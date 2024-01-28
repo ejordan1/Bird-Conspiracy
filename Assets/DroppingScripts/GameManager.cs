@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,9 @@ public class GameManager : MonoBehaviour
     private List<PoopTarget> poopTargets;
     public string nextSceneString;
 
+    private EventInstance musicInstance;
+
+    //[SerializeField] private EventReference sampleSound1;
 
     void Start()
     {
@@ -21,6 +26,13 @@ public class GameManager : MonoBehaviour
             poopTargets.Add(g.GetComponent<PoopTarget>());
 
         }
+
+        musicInstance = AudioManager.instance.CreateInstance(FMODEvents.instance.music);
+
+        // need to start the sound here
+        musicInstance.start();
+        
+        //AudioManager.instance.PlayOneShot(sampleSound1, this.transform.position);
     }
 
     public void clickedOnBackground()
