@@ -32,7 +32,7 @@ public class StoryScene : ScriptableObject
                 public float moveSpeed;
                 [System.Serializable]
                 public enum Type {
-                    NONE, APPEAR, MOVE, DISAPPEAR
+                    NONE, APPEAR, MOVE, DISAPPEAR, ZOOM
                 }
         }
     }

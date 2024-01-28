@@ -15,6 +15,9 @@ public class BottomBarController : MonoBehaviour
     private Animator animator;
     private bool isHidden = false;
 
+    public GameObject backGround;
+    private SpriteSwitcher spriteSwitcher;
+
     public Dictionary<Speaker, SpriteController> sprites;
     public GameObject spritesPrefab;
 
@@ -27,6 +30,11 @@ public class BottomBarController : MonoBehaviour
     {
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        spriteSwitcher = backGround.GetComponent<SpriteSwitcher>();
     }
 
     public void Hide()
@@ -152,6 +160,10 @@ public class BottomBarController : MonoBehaviour
                 {
                     controller = sprites[action.speaker];
                 }
+                break;
+            case StoryScene.Sentence.Action.Type.ZOOM:
+            Debug.Log("zooming");
+            spriteSwitcher.ZoomOnBoss();
                 break;
         }
         if (controller != null)

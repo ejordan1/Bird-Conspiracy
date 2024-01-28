@@ -56,5 +56,10 @@ public class SpriteSwitcher : MonoBehaviour
             return image2.sprite;
         }
     }
+
+    public void ZoomOnBoss()
+    {
+        animator.SetTrigger("ZoomOnBoss");
+    }
 }
 
