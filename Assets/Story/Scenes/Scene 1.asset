@@ -47,7 +47,20 @@ MonoBehaviour:
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
       spriteIndex: 0
+      actionType: 0
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
       actionType: 4
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: 'Now, GO AND MAKE YOUR MARK!! '
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 0
       coords: {x: 0, y: 0}
       moveSpeed: 0
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}

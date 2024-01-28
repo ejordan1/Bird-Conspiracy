@@ -32,7 +32,7 @@ public class FlyMusic : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(6f);
         AudioManager.instance.PlayOneShot(splatSound, this.transform.position);
-        yield return new WaitForSecondsRealtime(3.1f);
+        yield return new WaitForSecondsRealtime(3f);
         AudioManager.instance.PlayOneShot(fallSound, this.transform.position);
 
     }

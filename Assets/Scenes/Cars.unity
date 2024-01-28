@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbdce88c01934e71b53b24b0a8e153e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneString: Scene2
+  nextSceneString: Boss3
 --- !u!114 &898777304
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,14 +13,84 @@ MonoBehaviour:
   m_Name: Scene 3
   m_EditorClassIdentifier: 
   senteces:
-  - text: kim now takling scene 3
-    speaker: {fileID: 11400000, guid: 207e5712e4e8b4150bd7be1018b60141, type: 2}
-    actions: []
-  - text: authur talking scene 3
-    speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
-    actions: []
-  - text: gorge takling scene 3
+  - text: Welcome back PRIVATE. You are better than we ever could have hoped. How
+      would you like to do one final mission. But this time, you get to choose.
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
+  - text: 'Here are your options: GO MARK UNSUSPECTING MILITARY OFFICIALS IN HAVANA '
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions: []
+  - text: 'Or MARK HUMAN-SIZED LIZARDS MARK ALL 1.3B SWIFTIES '
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions: []
+  - text: What would you like to do?
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions: []
+  - text: I REFUSE TO BE A PART OF THIS SYSTEM
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Try again
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: What you're asking is a suicide run. No.
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: 'Private, no one says no to me. PICK! '
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: I want to conscientiously object to what you're asking me to do
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: PRIVATE 46,YOU DON'T GET TO OBJECT TO ANYTHING. I ORDER YOU TO CHOOSE ONE
+      OF THESE ITEMS.
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: I'm done taking orders from you Sargeant
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Fine, Private I see it's finally time to let you spread your wings. You
+      are relieved of your duties.
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   background: {fileID: 21300000, guid: 486bfb743ac9e40638c9cf11153b351d, type: 3}
-  nextScene: {fileID: 11400000, guid: f1bc8fff747ff41b283c093e3d39293e, type: 2}
+  nextSceneString: 

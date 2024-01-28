@@ -13,12 +13,26 @@ MonoBehaviour:
   m_Name: Scene 2
   m_EditorClassIdentifier: 
   senteces:
-  - text: Good job everyone. A special congrats to Private 46 for perfect results.
+  - text: That was some fantastic marking Private, but we need to move onto THE NEXT
+      MISSION. Here's your next list.
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
-  - text: The boss is very pleased with you. Please collect your surveillance assignments
-      by the door on your way out.
+  - text: "\u2026 did you write these?"
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
-    actions: []
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Now PRIVATE, it's time to go to a building that stands tall, which e-commerce
+      has caused a mass withdrawal!
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   background: {fileID: 21300000, guid: b69fe371e496241078f6bf15576888c7, type: 3}
   nextSceneString: Cars
