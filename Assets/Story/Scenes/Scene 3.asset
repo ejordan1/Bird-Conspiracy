@@ -15,9 +15,12 @@ MonoBehaviour:
   senteces:
   - text: kim now takling scene 3
     speaker: {fileID: 11400000, guid: 207e5712e4e8b4150bd7be1018b60141, type: 2}
+    actions: []
   - text: authur talking scene 3
     speaker: {fileID: 11400000, guid: 2137a29535348434183b8d52c21f97b9, type: 2}
+    actions: []
   - text: gorge takling scene 3
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
-  background: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+    actions: []
+  background: {fileID: 21300000, guid: 486bfb743ac9e40638c9cf11153b351d, type: 3}
   nextScene: {fileID: 11400000, guid: f1bc8fff747ff41b283c093e3d39293e, type: 2}
