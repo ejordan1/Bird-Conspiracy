@@ -16,11 +16,12 @@ MonoBehaviour:
   - text: Ahem... We have our next mission from the boss, Mission xx6728..
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
-  - text: This will be our 6,728 dropping mission of the year. Everyone except prviate
+  - text: This will be our 6,728 dropping mission of the year. Everyone except private
       46, gather your lists and get ready to head out.
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
-  - text: 'uhoh '
+  - text: "Private 46, if we don\u2019t see perfect results from you\u2026 Just make
+      sure you get perfect results."
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
@@ -29,4 +30,4 @@ MonoBehaviour:
       coords: {x: 0, y: 0}
       moveSpeed: 0
   background: {fileID: 21300000, guid: 1a5614c6541614c11841f31015c0506c, type: 3}
-  nextScene: {fileID: 11400000}
+  nextSceneString: Park

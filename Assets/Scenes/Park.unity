@@ -343,7 +343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b45461b5af8429995ba6ada2cd2c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 777361580}
 --- !u!1 &890991511
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbdce88c01934e71b53b24b0a8e153e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneString: Scene2
+  nextSceneString: Boss2
 --- !u!1001 &914287389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,11 +786,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5
+      value: 20.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: xSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: ySize
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
@@ -807,11 +814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 238
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 347
+      value: 361
       objectReference: {fileID: 0}
     - target: {fileID: 7201008735571500929, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Name
@@ -891,11 +898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7958857183705377468, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -204
+      value: -203
       objectReference: {fileID: 0}
     - target: {fileID: 7958857183705377468, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -181
+      value: -194
       objectReference: {fileID: 0}
     - target: {fileID: 7958857183705377468, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

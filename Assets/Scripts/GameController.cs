@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour
             {
                 if(bottomBar.IsLastSentence())
                 {
-                    SceneManager.LoadScene("Scene2");
+                    SceneManager.LoadScene(currentScene.nextSceneString);
                 } else {
                 bottomBar.PlayNextSentence();
                 }

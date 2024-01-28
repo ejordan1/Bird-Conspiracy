@@ -11,7 +11,8 @@ public class StoryScene : ScriptableObject
     public List<Sentence> senteces;
     // Start is called before the first frame update
     public Sprite background;
-    public StoryScene nextScene;
+    //public StoryScene nextScene;
+    public string nextSceneString;
 
     [System.Serializable]
     public struct Sentence
