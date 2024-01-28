@@ -120,7 +120,7 @@ public class BottomBarController : MonoBehaviour
         private IEnumerator DroneSound()
     {
         int counter = 0;
-        while (counter < 30)
+        while (counter < 60)
         {
             counter++;
             yield return new WaitForSecondsRealtime(0.04f);
@@ -130,7 +130,7 @@ public class BottomBarController : MonoBehaviour
 
         private IEnumerator HideDrones()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         dronesObject.GetComponent<Image>().color = new Color32(0,0,0,0);
     }
 

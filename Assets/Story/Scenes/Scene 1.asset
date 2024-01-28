@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Scene 1
   m_EditorClassIdentifier: 
   senteces:
-  - text: a
+  - text: Hello Private, welcome to the Pigeonatti. You will report to me, YOUR SARGEANT.
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions: []
+  - text: You have been recruited because of your impressive results during training.
+      The rest of the squad is excited to have you! Right guys?
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
@@ -21,22 +25,34 @@ MonoBehaviour:
       actionType: 0
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: This will be our 6,728 dropping mission of the year. Everyone except private
-      46, gather your lists and get ready to head out.
+  - text: 'Welcome to the crew! '
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions:
-    - speaker: {fileID: 0}
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
       spriteIndex: 0
       actionType: 5
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: "Private 46, if we don\u2019t see perfect results from you\u2026 Just make
-      sure you get perfect results."
+  - text: "uhhh\u2026 what's wrong with them?"
+    speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+  - text: Don't mind them,they're just waking up! Now Private, here's your list.
+      And I want nothing but PERFECTION.
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
       spriteIndex: 0
       actionType: 4
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
+      spriteIndex: 0
+      actionType: 3
       coords: {x: 0, y: 0}
       moveSpeed: 0
   background: {fileID: 21300000, guid: 1a5614c6541614c11841f31015c0506c, type: 3}
