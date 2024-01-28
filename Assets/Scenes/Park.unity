@@ -522,7 +522,6 @@ GameObject:
   - component: {fileID: 898777300}
   - component: {fileID: 898777299}
   - component: {fileID: 898777303}
-  - component: {fileID: 898777304}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -629,24 +628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneString: Boss2
-  camera: {fileID: 0}
---- !u!114 &898777304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898777298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!1001 &914287389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,15 +638,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1639738616338927607, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.5529412
       objectReference: {fileID: 0}
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 0.5529412
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_LocalScale.x
@@ -677,11 +662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -72.6
+      value: -75.4
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 168.1
+      value: 165.3
       objectReference: {fileID: 0}
     - target: {fileID: 7201008735571500929, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Name
@@ -918,15 +903,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1639738616338927607, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.5529412
       objectReference: {fileID: 0}
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.6
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 20.7
+      value: 20.1
       objectReference: {fileID: 0}
     - target: {fileID: 3124601308847769928, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: xSize
@@ -938,7 +923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 0.5529412
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_LocalScale.x
@@ -950,11 +935,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 237
+      value: 239.8
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 361
+      value: 368.5
       objectReference: {fileID: 0}
     - target: {fileID: 7201008735571500929, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Name
@@ -1189,9 +1174,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 898777302}
     m_Modifications:
+    - target: {fileID: 1639738616338927607, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415142421357879181, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3309710594183654044, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 0.5529412
       objectReference: {fileID: 0}
     - target: {fileID: 4332517852302930572, guid: 345155462ec834d70a3c4235c8051e07, type: 3}
       propertyPath: m_LocalScale.x
