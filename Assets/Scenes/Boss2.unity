@@ -505,11 +505,19 @@ MonoBehaviour:
       Data3: 259532213
       Data4: -1058110408
     Path: event:/Sound/Pidgeon voices/speak_boss
+  sampleSound2:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   barText: {fileID: 822777220}
   personNameText: {fileID: 321844070}
   currentScene: {fileID: 11400000, guid: f1bc8fff747ff41b283c093e3d39293e, type: 2}
   backGround: {fileID: 205228478}
   spritesPrefab: {fileID: 1994848190}
+  dronesObject: {fileID: 0}
 --- !u!95 &485356581
 Animator:
   serializedVersion: 5
@@ -1132,7 +1140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 423.5, y: -410}
+  m_AnchoredPosition: {x: 760, y: -410}
   m_SizeDelta: {x: -847, y: -820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807

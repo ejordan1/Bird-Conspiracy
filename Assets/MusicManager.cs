@@ -14,7 +14,7 @@ public class MusicManager : MonoBehaviour
         musicInstance = AudioManager.instance.CreateInstance(FMODEvents.instance.music);
     
         musicInstance.start();
-        StartCoroutine(IncreaseDrone());
+        //StartCoroutine(IncreaseDrone());
     }
 
     // Update is called once per frame

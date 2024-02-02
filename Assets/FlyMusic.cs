@@ -30,9 +30,9 @@ public class FlyMusic : MonoBehaviour
 
     private IEnumerator SplatSound()
     {
-        yield return new WaitForSecondsRealtime(6f);
+        yield return new WaitForSeconds(6f);
         AudioManager.instance.PlayOneShot(splatSound, this.transform.position);
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSeconds(2.6f);
         AudioManager.instance.PlayOneShot(fallSound, this.transform.position);
 
     }

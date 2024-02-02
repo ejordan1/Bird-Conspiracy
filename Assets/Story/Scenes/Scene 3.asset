@@ -20,7 +20,7 @@ MonoBehaviour:
   - text: 'Here are your options: GO MARK UNSUSPECTING MILITARY OFFICIALS IN HAVANA '
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
-  - text: 'Or MARK HUMAN-SIZED LIZARDS MARK ALL 1.3B SWIFTIES '
+  - text: Or MARK HUMAN-SIZED LIZARDS
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions: []
   - text: What would you like to do?
@@ -72,10 +72,10 @@ MonoBehaviour:
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
       spriteIndex: 0
-      actionType: 1
+      actionType: 3
       coords: {x: 0, y: 0}
       moveSpeed: 0
-  - text: I'm done taking orders from you Sargeant
+  - text: I'm done taking orders from you Sergeant.
     speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: afe9822e20aa54f0887f92ea3c9663a1, type: 2}
